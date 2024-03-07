@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://federiconavarrete.com/linktree/sitemap.xml
