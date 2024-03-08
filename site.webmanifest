@@ -1,8 +1,8 @@
 {
   "name": "Federico Navarrete - LinkTree",
   "short_name": "FANMixco - LinkTree",
-  "scope": "https://federiconavarrete.com/linktree/",
-  "start_url": "https://federiconavarrete.com/linktree/",
+  "scope": "https://linktree.federiconavarrete.com/",
+  "start_url": "https://linktree.federiconavarrete.com/",
   "orientation": "portrait-primary",
   "lang": "en",
   "description": "Federico Navarrete: IT innovator, Author, Orator, shaping a better world via tech.",
