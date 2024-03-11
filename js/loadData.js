@@ -1,7 +1,7 @@
 const language = window.navigator.userLanguage || window.navigator.language;
 let currentLoc = '';
 
-const langLoc = "js/data/";
+const langLoc = "js/i18n/";
 
 const lang = (language.includes('es')) ? "es" : "en";
 
@@ -44,7 +44,7 @@ function addTranslateElement() {
 function createLink(item, className, addIcon = true) {
     const link = document.createElement('a');
     link.classList.add(className);
-    link.href = item.link;
+    link.href = `https://${item.link}`;
     link.setAttribute('aria-label', item['aria-label']);
     link.setAttribute('title', item.title);
     link.setAttribute('id', item.id);

@@ -11,7 +11,7 @@
     },
     "links": [
         {
-            "link": "https://bit.ly/hireflinkedin",
+            "link": "bit.ly/hireflinkedin",
             "id": "",
             "aria-label": "Hire Me On LinkedIn",
             "title": "Hire Me On LinkedIn",
@@ -20,7 +20,7 @@
             "text": "Hire Me"
         },
         {
-            "link": "https://bit.ly/47hmCm1",
+            "link": "bit.ly/47hmCm1",
             "id": "",
             "aria-label": "Meet Me (15”)",
             "title": "Meet Me (15”)",
@@ -29,7 +29,7 @@
             "text": "Meet Me (15”)"
         },
         {
-            "link": "https://be.net/fanmixco",
+            "link": "be.net/fanmixco",
             "id": "",
             "aria-label": "Check My Portfolio",
             "title": "Check My Portfolio",
@@ -38,7 +38,7 @@
             "text": "Check My Portfolio"
         },
         {
-            "link": "https://a.co/d/4l5qaLk",
+            "link": "a.co/d/4l5qaLk",
             "id": "priority",
             "aria-label": "Read Timeless Stories of El Salvador",
             "title": "Read Timeless Stories of El Salvador",
@@ -47,7 +47,7 @@
             "text": "Read Timeless Stories of El Salvador"
         },
         {
-            "link": "https://spoti.fi/43hUjBU",
+            "link": "spoti.fi/43hUjBU",
             "id": "",
             "aria-label": "Spotify - Cyber Prophets Podcast",
             "title": "Listen to The Cyber Prophets",
@@ -56,7 +56,7 @@
             "text": "Listen to The Cyber Prophets"
         },
         {
-            "link": "https://www.youtube.com/@FedericoNavarrete",
+            "link": "www.youtube.com/@FedericoNavarrete",
             "id": "uTubeLink",
             "aria-label": "Subscribe to my YouTube Channel",
             "title": "Subscribe to my YouTube Channel",
@@ -65,7 +65,7 @@
             "text": "Subscribe to My YouTube Channel"
         },
         {
-            "link": "https://apple.co/3NfRDhz",
+            "link": "apple.co/3NfRDhz",
             "id": "",
             "aria-label": "Sharing Your Stories",
             "title": "Discover Sharing Your Stories",
@@ -76,7 +76,7 @@
     ],
     "sublinks": [
         {
-            "link": "https://www.tiktok.com/@federicostories",
+            "link": "www.tiktok.com/@federicostories",
             "aria-label": "Follow me on TikTok",
             "id": "",
             "title": "Follow me on TikTok",
@@ -84,7 +84,7 @@
             "icon": "icon-tiktok"
         },
         {
-            "link": "https://www.instagram.com/federico_the_consultant",
+            "link": "www.instagram.com/federico_the_consultant",
             "aria-label": "Follow me on Instagram",
             "id": "",
             "title": "Follow me on Instagram",
@@ -92,7 +92,7 @@
             "icon": "icon-instagram"
         },
         {
-            "link": "https://www.linkedin.com/in/federiconavarrete",
+            "link": "www.linkedin.com/in/federiconavarrete",
             "aria-label": "Contact me on LinkedIn",
             "id": "",
             "title": "Contact me on LinkedIn",
@@ -100,14 +100,14 @@
             "icon": "icon-linkedin"
         },
         {
-            "link": "https://bit.ly/3P6wkBn",
+            "link": "bit.ly/3P6wkBn",
             "id": "",
             "aria-label": "Download Business Card",
             "title": "Download Business Card",
             "icon": "icon-vcard-o"
         },
         {
-            "link": "https://github.com/FANMixco",
+            "link": "github.com/FANMixco",
             "aria-label": "Fork me on GitHub",
             "id": "",
             "title": "Fork me on GitHub",
@@ -115,7 +115,7 @@
             "icon": "icon-github"
         },
         {
-            "link": "https://x.com/FedeStories",
+            "link": "x.com/FedeStories",
             "aria-label": "Follow me on X",
             "id": "",
             "title": "Follow me on X",
@@ -123,7 +123,7 @@
             "icon": "icon-twitter"
         },
         {
-            "link": "https://bit.ly/3sLFZVb",
+            "link": "bit.ly/3sLFZVb",
             "aria-label": "Contact Me",
             "id": "",
             "title": "Contact Me",
