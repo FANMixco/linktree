@@ -11,15 +11,6 @@
     },
     "links": [
         {
-          "link": "bit.ly/hireflinkedin",
-          "aria-label": "Contrátame en LinkedIn",
-          "id": "",
-          "title": "Contrátame en LinkedIn",
-          "target": "_blank",
-          "icon": "icon-handshake-o",
-          "text": "Contrátame"
-        },
-        {
           "link": "bit.ly/3PxrbSC",
           "id": "",
           "aria-label": "Hablemos (15”)",

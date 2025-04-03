@@ -11,15 +11,6 @@
     },
     "links": [
         {
-            "link": "bit.ly/hireflinkedin",
-            "id": "",
-            "aria-label": "Hire Me On LinkedIn",
-            "title": "Hire Me On LinkedIn",
-            "target": "_blank",
-            "icon": "icon-handshake-o",
-            "text": "Hire Me"
-        },
-        {
             "link": "bit.ly/3PxrbSC",
             "id": "",
             "aria-label": "Meet Me (15”)",
