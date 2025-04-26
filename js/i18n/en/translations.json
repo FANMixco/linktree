@@ -38,15 +38,6 @@
             "text": "Read Timeless Stories of El Salvador"
         },
         {
-            "link": "spoti.fi/43hUjBU",
-            "id": "",
-            "aria-label": "Spotify - Cyber Prophets Podcast",
-            "title": "Listen to The Cyber Prophets",
-            "target": "_blank",
-            "icon": "icon-spotify",
-            "text": "Listen to The Cyber Prophets"
-        },
-        {
             "link": "www.youtube.com/@FedericoNavarrete",
             "id": "uTubeLink",
             "aria-label": "Subscribe to my YouTube Channel",
