@@ -1,7 +1,7 @@
 {
     "basic": {
         "name": "Federico Navarrete",
-        "sub-title": "Consultor de la Nube 💡, Autor ✍️ y Orador 🇬🇧/🇪🇸<br />¡Creando un mejor 🌍 a través de tecnovaciones!",
+        "sub-title": "Estratega de TICs, Autor y Orador 🇬🇧/🇪🇸<br />¡Creando un mejor a través de sistemas 💻!",
         "hashtag": "#SeUnAgenteDeCambio",
         "quote": "Como el Fénix, resurge de TUS cenizas cada vez más fuerte.",
         "share": {
@@ -21,12 +21,12 @@
         },
         {
           "link": "be.net/fanmixco",
-          "aria-label": "Mira Mi Portafolio",
+          "aria-label": "Ve mi Portafolio",
           "id": "",
-          "title": "Mira Mi Portafolio",
+          "title": "Ve mi Portafolio",
           "target": "_blank",
           "icon": "icon-behance",
-          "text": "Mira Mi Portafolio"
+          "text": "Ve mi Portafolio"
         },
         {
           "link": "a.co/d/9Mqyp4j",
