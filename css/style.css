@@ -109,14 +109,14 @@ body {
 }
 
 #qrFloating {
-  display: none;
+    display: none;
 }
 
 /* Landscape + width ≥ 768px */
 @media (min-width: 768px) and (orientation: landscape) {
-  #qrFloating {
-    display: block;
-  }
+    #qrFloating {
+        display: block;
+    }
 }
 
 #links {
@@ -132,6 +132,12 @@ body {
 
 #divClear {
     clear: both;
+}
+
+#qrText {
+    color: white;
+    font-weight: bold;
+    font-size: .9rem;
 }
 
 #hashtag {
