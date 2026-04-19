@@ -1,31 +1,24 @@
 const popup = document.getElementById("popup");
-popup.addEventListener("click", goBack);
-popup.addEventListener("touchstart", goBack);
-//document.getElementById("popup-close").addEventListener("touchstart", goBack);
+const popupDialog = popup.querySelector(".popup");
+const popupCloseButton = document.getElementById("popup-close");
 
-if (window.location.hash) {
-  let urlWithoutHash = window.location.href.split('#')[0];
-  window.location.href = urlWithoutHash;
-}
+popup.addEventListener("click", function (event) {
+  if (event.target === popup) {
+    closePopup(event);
+  }
+});
+
+popupDialog.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+popupCloseButton.addEventListener("click", closePopup);
 
 window.addEventListener('load', function() {
     let imgPopups = document.getElementsByClassName('imgPopup');
     for (let i = 0; i < imgPopups.length; i++) {
       imgPopups[i].style.display = 'block';
     }
-});
-
-window.addEventListener('load', function () {
-  // Add a new history entry when the app is loaded
-  window.history.pushState({}, '')
-})
-
-window.addEventListener('popstate', function () {
-  // Check if the history state has an identifier
-  if (history.state && history.state.id === 'prevent-back') {
-    // Re-push the history entry when the user presses back
-    window.history.pushState({ id: 'prevent-back' }, '')
-  }
 });
 
 window.onload = function() {
@@ -63,40 +56,36 @@ function isSquareScreen() {
   return diff <= threshold;
 }
 
-function goBack() {
-  if (document.referrer === "" || new URL(document.referrer).hostname !== window.location.hostname) {
-    const currentURL = window.location.href;
-    const baseUrl = currentURL.split('/').slice(0, -1).join('/');
-    window.location.href = `${baseUrl}/index.html`; // Replace with the appropriate URL of your index page
-  } else {
-    history.back();
+function isPopupOpen() {
+  return window.location.hash === "#popup";
+}
+
+function closePopup(event) {
+  if (event) {
+    event.preventDefault();
   }
+
+  if (!isPopupOpen()) {
+    return;
+  }
+
+  window.location.hash = "";
+  const urlWithoutHash = `${window.location.pathname}${window.location.search}`;
+  window.history.replaceState(window.history.state, "", urlWithoutHash);
+  toggleBodyOverflow();
 }
 
 document.addEventListener("keydown", function(event) {
-  if (event.key === "Escape") {
-    const overlay = document.querySelector(".overlay");
-    const overlayStyles = getComputedStyle(overlay);
-    const isOverlayVisible = overlayStyles.display !== "none";
-    
-    if (isOverlayVisible) {
-      goBack();
-    }
+  if (event.key === "Escape" && isPopupOpen()) {
+    closePopup(event);
   }
 });
 
-// JavaScript to handle body overflow
+function toggleBodyOverflow() {
+  document.body.classList.toggle("no-scroll", isPopupOpen());
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-  const overlayTmp = document.querySelector('.overlay');
-
-  // Function to toggle body class when overlay is targeted
-  function toggleBodyOverflow() {
-    document.body.classList.toggle('no-scroll', overlayTmp.matches(':target'));
-  }
-
-  // Event listener for hash change (when overlay is targeted)
   window.addEventListener('hashchange', toggleBodyOverflow);
-
-  // Initial check in case there's an initial target
   toggleBodyOverflow();
 });
