@@ -133,8 +133,26 @@ shareLink.addEventListener('click', (e) => {
     });
 });
 
+function runWhenIdle(callback, timeout = 2500) {
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(callback, { timeout });
+    return;
+  }
+
+  setTimeout(callback, timeout);
+}
+
+function runAfterDomReady(callback) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', callback, { once: true });
+    return;
+  }
+
+  callback();
+}
+
 //gAnalytics
-document.addEventListener("DOMContentLoaded", function(event) {
+function loadAnalyticsScripts() {
   let gaScript = document.createElement("script");
   gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WR9ZRLLN09";
   gaScript.async = true;
@@ -155,4 +173,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   script.defer = true;
 
   document.body.appendChild(script);
+}
+
+runAfterDomReady(function() {
+  runWhenIdle(loadAnalyticsScripts);
 });
