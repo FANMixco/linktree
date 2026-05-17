@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i18n Manager</title>
+    <link rel="stylesheet" href="i18n-manager.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">
+            <h1>i18n Manager</h1>
+            <p>Edit source JSON and generate minified files.</p>
+        </div>
+
+        <section class="panel">
+            <div class="panel-title">
+                <h2>Languages</h2>
+                <button type="button" id="reloadBtn" title="Reload files">R</button>
+            </div>
+            <div id="languageList" class="nav-list"></div>
+            <form id="newLanguageForm" class="inline-form">
+                <input id="newLanguageInput" type="text" placeholder="new language" autocomplete="off">
+                <button type="submit" title="Create language">+</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <div class="panel-title">
+                <h2>Files</h2>
+                <span id="fileCount">0 JSON</span>
+            </div>
+            <div id="fileList" class="nav-list"></div>
+        </section>
+    </aside>
+
+    <main class="workspace">
+        <header class="topbar">
+            <div>
+                <h2 id="fileTitle">Select a file</h2>
+                <p id="filePath">js/i18n</p>
+            </div>
+            <div class="actions">
+                <button type="button" id="rawBtn">Raw JSON</button>
+                <button type="button" id="validateBtn">Validate</button>
+                <button type="button" id="minifyLanguageBtn">Minify language</button>
+                <button type="button" id="minifyAllBtn">Minify all</button>
+                <button type="button" id="saveBtn" class="primary" disabled>Save</button>
+            </div>
+        </header>
+
+        <div id="status" class="status" hidden></div>
+
+        <section id="editor" class="editor empty-state">
+            <p>Choose a language and JSON file to start editing.</p>
+        </section>
+    </main>
+
+    <template id="objectTemplate">
+        <section class="json-block">
+            <div class="block-heading">
+                <div>
+                    <h3></h3>
+                    <span></span>
+                </div>
+                <button type="button" data-action="add-field">Add field</button>
+            </div>
+            <div class="block-body"></div>
+        </section>
+    </template>
+
+    <template id="arrayTemplate">
+        <section class="json-block">
+            <div class="block-heading">
+                <div>
+                    <h3></h3>
+                    <span></span>
+                </div>
+                <button type="button" data-action="add-item">Add item</button>
+            </div>
+            <div class="block-body"></div>
+        </section>
+    </template>
+
+    <script src="i18n-manager.js"></script>
+</body>
+</html>

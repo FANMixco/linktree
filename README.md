@@ -52,6 +52,7 @@ git clone https://github.com/johnggli/linktree
 - Change the profile image and texts in the `index.html` file.
 - Change the colors and fonts in the `style.css` file.
 - To change the background, go to the `style.css` file on line 17, uncomment the code snippet and change the url to whatever image you want.
+- To edit translations and generate minified i18n files, run `node tools/i18n-manager-server.js` and open `http://localhost:4174`.
 
 ## 🤔 How to contribute
 
