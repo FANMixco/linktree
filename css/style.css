@@ -91,19 +91,20 @@ body {
   }*/
 
 #share-section {
-    padding-right: 30px;
+    padding: 0 30px;
     font-size: 1.4rem !important;
     margin-top: 40px !important;
     max-width: 480px;
     width: auto;
-    display: block;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
     #share-section {
-        padding-right: 15px;
+        padding: 0 15px;
         margin-top: 12px !important;
     }
 }
@@ -128,6 +129,16 @@ body {
 
 #shareLink {
     float: right;
+}
+
+#memoryGameLink {
+    float: left;
+}
+
+#memoryGameLink span {
+    display: block;
+    line-height: 1;
+    transform: translateY(0.06em);
 }
 
 #divClear {
