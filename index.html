@@ -28,6 +28,8 @@ https://goo.gl/forms/JArck4uzbGGmTuG72
     <meta name="author" content="Federico Navarrete">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Federico Navarrete">
+
+    <link rel="canonical" href="https://linktree.federiconavarrete.com">
   
     <title>Federico Navarrete | LinkedIn, Amazon, YouTube, Spotify, TikTok, GitHub</title>
     <!-- Favicon -->
@@ -132,26 +134,38 @@ https://goo.gl/forms/JArck4uzbGGmTuG72
     <script src="js/min/index_share_analytics.js" defer></script>
     
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Person",
-        "name": "Federico Navarrete",
-        "url": "https://linktree.federiconavarrete.com",
-        "image": "https://federiconavarrete.com/img/photos/federico-navarrete.webp",
-        "jobTitle": "Technovator, Cloud Consultant, Author and Orator",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Supernova IC"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://linktree.federiconavarrete.com/#webpage",
+          "url": "https://linktree.federiconavarrete.com",
+          "name": "Federico Navarrete | Official Profile & Links",
+          "mainEntity": { "@id": "https://linktree.federiconavarrete.com/#person" }
         },
-        "sameAs": [
-          "https://www.instagram.com/federico_the_consultant/",
-          "https://linkedin.com/in/federiconavarrete",
-          "https://www.tiktok.com/@federicostories",
-          "https://youtube.com/@FedericoNavarrete",
-          "https://twitter.com/FedeStories",
-          "https://www.amazon.com/stores/Federico-Navarrete/author/B08NJTXQRV"
-        ]
-      }
+        {
+          "@type": "Person",
+          "@id": "https://linktree.federiconavarrete.com/#person",
+          "name": "Federico Navarrete",
+          "image": "https://federiconavarrete.com/img/photos/federico-navarrete.webp",
+          "jobTitle": "Technovator, Cloud Consultant, Author and Orator",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Supernova IC"
+          },
+          "url": "https://linktree.federiconavarrete.com",
+          "sameAs": [
+            "https://www.instagram.com/federico_the_consultant/",
+            "https://linkedin.com/in/federiconavarrete",
+            "https://www.tiktok.com/@federicostories",
+            "https://youtube.com/@FedericoNavarrete",
+            "https://twitter.com/FedeStories",
+            "https://www.amazon.com/stores/Federico-Navarrete/author/B08NJTXQRV"
+          ]
+        }
+      ]
+    }
     </script>
 
     <script type="module">
