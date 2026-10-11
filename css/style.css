@@ -133,6 +133,7 @@ body {
 
 #memoryGameLink {
     float: left;
+    font-size: 2rem;
 }
 
 #memoryGameLink span {
